@@ -1,0 +1,22 @@
+{
+  "name": "ricardoschroeder",
+  "version": "1.0.0",
+  "description": "![Ricardo's github stats](https://github-readme-stats.vercel.app/api?username=ricardoschroeder&show_icons=true&theme=dark)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardoschroeder/ricardoschroeder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardoschroeder/ricardoschroeder/issues"
+  },
+  "homepage": "https://github.com/ricardoschroeder/ricardoschroeder#readme",
+  "dependencies": {
+    "mustache": "^4.1.0"
+  }
+}
