@@ -1,6 +1,7 @@
 name: README build
 
-on:
+on: 
+  [workflow_dispatch]
   push:
     branches:
       - master
