@@ -1,4 +1,4 @@
-My name is Ricardo and today is Tuesday, January 26, 10:21 PM GMT+1.
+My name is Ricardo and today is Wednesday, 27 January, 10:00 CET.
 
 ![Ricardo's github stats](https://github-readme-stats.vercel.app/api?username=ricardoschroeder&show_icons=true&theme=dark)
 
