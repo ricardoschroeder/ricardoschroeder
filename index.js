@@ -1,12 +1,28 @@
-// index.js
 const Mustache = require('mustache');
 const fs = require('fs');
 const MUSTACHE_MAIN_DIR = './main.mustache';
-/**
-  * DATA is the object that contains all
-  * the data to be provided to Mustache
-  * Notice the "name" and "date" property.
-*/
+const https = require('https');
+
+let temperature = '';
+let apiKey = process.env.OPEN_WEATHER_MAP_API_KEY;
+
+https.get('https://api.openweathermap.org/data/2.5/weather?q=Amsterdam,nl&units=metric&appid=' + apiKey,
+  (resp) => {
+    let data = '';
+
+    resp.on('data', (chunk) => {
+      data += chunk;
+    });
+
+    resp.on('end', () => {
+      temperature = JSON.parse(data).main.temp;
+    });
+  })
+  .on("error", (err) => {
+    console.log("Error: " + err.message);
+  })
+
+
 let DATA = {
   name: 'Ricardo',
   date: new Date().toLocaleDateString('en-GB', {
@@ -18,12 +34,9 @@ let DATA = {
     timeZoneName: 'short',
     timeZone: 'Europe/Amsterdam',
   }),
+  temperature: temperature
 };
-/**
-  * A - We open 'main.mustache'
-  * B - We ask Mustache to render our file with the data
-  * C - We create a README.md file with the generated output
-  */
+
 function generateReadMe() {
   fs.readFile(MUSTACHE_MAIN_DIR, (err, data) =>  {
     if (err) throw err;
@@ -31,4 +44,5 @@ function generateReadMe() {
     fs.writeFileSync('README.md', output);
   });
 }
+
 generateReadMe();
