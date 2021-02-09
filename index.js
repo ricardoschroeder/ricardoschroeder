@@ -15,7 +15,7 @@ https.get('https://api.openweathermap.org/data/2.5/weather?q=Amsterdam,nl&units=
     });
 
     resp.on('end', () => {
-      temperature = JSON.parse(data).main.temp;
+      temperature = JSON.parse(data).$.main.temp;
     });
   })
   .on("error", (err) => {
