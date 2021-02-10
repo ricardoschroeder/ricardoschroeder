@@ -1,7 +1,7 @@
 {
   "name": "ricardoschroeder",
   "version": "1.0.0",
-  "description": "![Ricardo's github stats](https://github-readme-stats.vercel.app/api?username=ricardoschroeder&show_icons=true&theme=dark)",
+  "description": "A dynamic README.md for your GitHub Profile, using Actions, Javascript and Mustache.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/ricardoschroeder/ricardoschroeder.git"
   },
-  "author": "",
+  "keywords": [
+    "readme.md",
+    "github",
+    "actions",
+    "dynamic",
+    "javascript"
+  ],
+  "author": "Ricardo Schroeder",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ricardoschroeder/ricardoschroeder/issues"
@@ -18,7 +25,7 @@
   "homepage": "https://github.com/ricardoschroeder/ricardoschroeder#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "mustache": "^4.1.0",
+    "mustache": "^4.0.1",
     "node-fetch": "^2.6.1"
   }
 }
