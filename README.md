@@ -1,9 +1,4 @@
-<p>Welcome to my page! </br> I'm Ricardo, Full-Stack developer from <b>Santa Cruz do Sul, Brazil</b>, currently living in <b>Amsterdam, Netherlands</b>. </p>
-
-Currently, the weather is: <b> -3°C, <i>few clouds</i></b></br>Today, the sun rises at <b>08:05 AM</b> and sets at <b>05:43 PM</b>.</p>
-
-![README build](https://github.com/ricardoschroeder/ricardoschroeder/workflows/README%20build/badge.svg)
-<p align="center">This <i>README</i> file is generated <b>every 6 hours</b>!</br>Last refresh: Wednesday, February 10, 9:52 AM GMT+1<br />
+<p>Hello! </br> My name is Ricardo, I'm a Full-Stack developer from <b>Santa Cruz do Sul, Brazil</b>, living in <b>Amsterdam, Netherlands</b>. </p>
 
 <!--
 ![Ricardo's github stats](https://github-readme-stats.vercel.app/api?username=ricardoschroeder&show_icons=true&theme=dark)
